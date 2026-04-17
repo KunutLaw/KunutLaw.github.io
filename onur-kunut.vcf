@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Kunut;Onur;;;
+FN:Onur Kunut
+TITLE:Avukat
+ORG:Kunut Law
+TEL;TYPE=CELL,VOICE:+905534163178
+EMAIL;TYPE=WORK,INTERNET:onur.kunut@kunutlaw.com
+URL:https://kunutlaw.github.io
+END:VCARD
