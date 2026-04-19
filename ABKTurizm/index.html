@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABK Turizm - Ali Burak Kadan</title>
     <style>
+        /* Elit VIP Taşımacılık Teması: Siyah & Altın */
         body {
+            /* Logonun siyahıyla birebir uyumlu arka plan */
             background-color: #000000;
+            background-attachment: fixed;
             color: #ffffff;
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -20,6 +23,7 @@
         .logo {
             width: 220px;
             margin-bottom: 30px;
+            /* Logonun altın ışıltısını vurgulayan hafif parıltı */
             filter: drop-shadow(0 0 10px rgba(213, 172, 99, 0.2));
         }
 
@@ -29,10 +33,12 @@
         }
 
         .name {
+            /* Elit duruş için Serif font ve Altın rengi */
             font-family: 'Times New Roman', Times, serif;
             font-size: 28px;
             font-weight: 700;
             margin-bottom: 8px;
+            letter-spacing: 0.5px;
             color: #d5ac63;
         }
 
@@ -41,6 +47,7 @@
             color: #94a3b8;
             text-transform: uppercase;
             letter-spacing: 2px;
+            font-weight: 400;
         }
 
         .container {
@@ -51,6 +58,7 @@
             gap: 16px;
         }
 
+        /* VIP hissi veren butonlar */
         .btn {
             background-color: transparent;
             color: #d5ac63;
@@ -62,9 +70,14 @@
             font-weight: 600;
             border: 1px solid #d5ac63;
             transition: all 0.3s ease;
+            letter-spacing: 0.8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
         }
 
+        /* Rehbere Ekle Butonu - Altın Dolgulu */
         .btn-primary {
             background-color: #d5ac63;
             color: #000000;
@@ -72,13 +85,19 @@
             font-weight: 700;
         }
 
-        .btn:hover {
-            transform: translateY(-2px);
+        .btn:hover:not(.btn-primary) {
             background-color: rgba(213, 172, 99, 0.1);
+            transform: translateY(-2px);
         }
 
         .btn-primary:hover {
             background-color: #e9c47e;
+            transform: translateY(-2px);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -98,7 +117,7 @@
         
         <a href="https://wa.me/905522257515" class="btn" target="_blank">WHATSAPP</a>
         
-        <div onclick="alert('E-posta adresi şu anda hazırlık aşamasındadır.')" class="btn">E-POSTA</div>
+        <a href="mailto:aliburakkadan@abkturizm.com" class="btn">E-POSTA GÖNDER</a>
         
         <div onclick="alert('Ofisimiz şu anda hazırlık aşamasındadır.')" class="btn">KONUM</div>
     </div>
