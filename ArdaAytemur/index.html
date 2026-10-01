@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Av. Sadık Arda Aytemur</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+        body {
+            background: linear-gradient(135deg, #050b14 0%, #0a1930 100%);
+            background-attachment: fixed;
+            color: #e2e8f0;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Sayfa içeriğini dikeyde ortalamak için eklendi */
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        /* KVKK, Bilişim ve Eşya hukukunu çağrıştıran ince geometrik ağ */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image:
+                linear-gradient(rgba(45, 212, 191, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(45, 212, 191, 0.04) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: -1;
+        }
+
+        .profile-card {
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(45, 212, 191, 0.15);
+            border-radius: 20px;
+            padding: 45px 20px;
+            width: 100%;
+            max-width: 320px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            margin-bottom: 30px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
+
+        .title {
+            font-size: 14px;
+            color: #2dd4bf;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 360px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .btn {
+            background: rgba(255, 255, 255, 0.03);
+            color: #e2e8f0;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            background: rgba(45, 212, 191, 0.1);
+            border-color: rgba(45, 212, 191, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #2dd4bf 0%, #0d9488 100%);
+            color: #042f2e;
+            border: none;
+            box-shadow: 0 4px 15px rgba(45, 212, 191, 0.25);
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+            box-shadow: 0 6px 20px rgba(45, 212, 191, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="name">Av. Sadık Arda Aytemur</div>
+        <div class="title">Avukat</div>
+    </div>
+
+    <div class="container">
+        <a href="arda-aytemur.vcf" class="btn btn-primary">REHBERE EKLE</a>
+        <a href="https://wa.me/905422356177" class="btn" target="_blank">WHATSAPP</a>
+        <a href="mailto:aytemursadikarda@gmail.com" class="btn">E-POSTA GÖNDER</a>
+        <a href="https://www.google.com/maps/place/Antalya+Law+Firm+%7C+Antalya+Anwalt+%7C+KUNUT+ANWALTSKANZLE%C4%B0+%7C+KUNUT+LAW+F%C4%B0RM/@36.8946172,30.7003431,17z/data=!3m1!4b1!4m6!3m5!1s0x14c3901ec1511767:0xf56463bb281b54f6!8m2!3d36.8946129!4d30.702918!16s%2Fg%2F11f2dtk2j3?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D" class="btn" target="_blank">KONUM</a>
+    </div>
+
+</body>
+</html>
